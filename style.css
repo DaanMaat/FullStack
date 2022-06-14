@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.89)),
+    url("header.jpg");
+    width: 100vw;
+    height: 45vh;
+    background-size: 50%;
+}
+
+h1 {
+    font-size: 80px;
+    padding-top: 7%;
+}
+
+#line, #login, #signup {
+    position: fixed;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: 300ms;
+}
+
+#login:hover, #signup:hover{
+    text-decoration: underline;
+}
+
+#login {
+    right: 30px;
+    top: 10px;
+}
+
+#signup {
+    right: 110px;
+    top: 10px;
+}
+
+#line {
+    right: 95px;
+    top: 5px;
+    font-size: 25px;
+}
+
+.index {
+    background-color: rgb(rgb(111, 111, 111), green, blue);
+}
+
+.login {
+    background: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)),
+    url("Inlog-backdrop.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: 100%;
+}
+
+.inlog-box {
+    position: absolute;
+    top: 47%;
+    right: 51%;
+    width: 13%;
+}
+
+.inlog-box2 {
+    position: absolute;
+    top: 47%;
+    left: 51%;
+    width: 13%;
+}
+
+.submit-btn{
+    position: absolute;
+    top: 52%;
+    width: 8%;
+    height: 6%;
+    left: 46%;
+    border: solid black 3px;
+    border-radius: 200px;
+    background-color: rgb(165, 228, 255);
+    font-size: 26px;
+    transition: 1s;
+}
+
+.submit-btn:hover{
+    background-color: rgb(0, 72, 103);
+    color: white;
+}
+
+.h1-inlog{
+    text-align: center;
+}
+
+.h2-inlog{
+    font-size: 40px;
+    color: white;
+    margin: 20px 0px 0px 60px;
+    transition: 1.2s;
+    
+}
+
+.h2-inlog:hover{
+    font-size: 40px;
+    color: rgb(97, 97, 97);
+    transform: translateX(-40px);
+}
+
+em{
+    font-size: 160px;
+    color: white
+}
+
+a{
+    text-decoration: none;
+}

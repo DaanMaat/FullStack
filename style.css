@@ -53,7 +53,7 @@ h1 {
     background-color: rgb(rgb(111, 111, 111), green, blue);
 }
 
-.login {
+.login, .signup {
     background: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)),
     url("Inlog-backdrop.jpg");
     width: 100vw;
@@ -61,23 +61,38 @@ h1 {
     background-size: 100%;
 }
 
-.inlog-box {
+.signup-box, .inlog-box{
+    width: 13%;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.inlog-box1, .signup-box1{
+    position: absolute;
+    top: 43%;
+    right: 51%;
+}
+
+.inlog-box2, .signup-box2 {
+    position: absolute;
+    top: 43%;
+    left: 51%;
+}
+
+.signup-box3{
     position: absolute;
     top: 47%;
     right: 51%;
-    width: 13%;
 }
 
-.inlog-box2 {
+.signup-box4{
     position: absolute;
     top: 47%;
     left: 51%;
-    width: 13%;
 }
 
 .submit-btn{
     position: absolute;
-    top: 52%;
     width: 8%;
     height: 6%;
     left: 46%;
@@ -88,16 +103,24 @@ h1 {
     transition: 1s;
 }
 
+.btn1{
+    top: 48%;
+}
+
+.btn2{
+    top: 52%;
+}
+
 .submit-btn:hover{
     background-color: rgb(0, 72, 103);
     color: white;
 }
 
-.h1-inlog{
+.h1-inlog, .h1-signup{
     text-align: center;
 }
 
-.h2-inlog{
+.h2-inlog, .h2-signup{
     font-size: 40px;
     color: white;
     margin: 20px 0px 0px 60px;
@@ -105,7 +128,7 @@ h1 {
     
 }
 
-.h2-inlog:hover{
+.h2-inlog:hover, .h2-signup:hover{
     font-size: 40px;
     color: rgb(97, 97, 97);
     transform: translateX(-40px);
@@ -118,4 +141,57 @@ em{
 
 a{
     text-decoration: none;
+    display: inline-block;
+}
+
+.red{
+    color: red;
+    text-align: center;
+}
+
+.green{
+    color: rgb(0, 185, 0);
+    text-align: center;
+}
+
+.melding-a{
+    color: red;
+    text-decoration: underline;
+}
+
+.melding{
+    margin-top: 6%;
+}
+
+.message{
+    margin-top: 8%;
+}
+
+.username{
+    position: absolute;
+    top: 15px;
+    right: 55px;
+    color: white;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+.UserIcon{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+
+}
+
+.Uitlog-btn{
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    color: white;
+}
+
+.Uitlog-btn:hover{
+    text-decoration: underline;
 }

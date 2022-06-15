@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['ingelogd'] = false;
 try{
     $user = 'root';
     $pass = 'root';
@@ -10,14 +12,18 @@ try{
             $inserted_username = $_POST['username'];
             $inserted_password = $_POST['password'];        
             if($inserted_username == $username  && $inserted_password == $password){
-               header("location: index.html");
-                break;
+            $_SESSION['ingelogd'] = true;
+            $_SESSION['username'] = $inserted_username;
+               header("location: index.php");
+               break;
             } else {
-                header("location: login.html");
+                $_SESSION['melding'] = '<p class="red melding">Incorrect username or password! <br>
+                No account? <br> Click  <a class="melding-a" href="signup.php?new-account">here</a> to create one!</p>';
+                header("location: login.php");
             }
         };
 } catch (PDOException $e) {
-        print "Error!: " . $e->getMessage() . "<br/>";
+        print "Error!: " . $e->getMessage() . "<br>";
         die();
 }
 ?>

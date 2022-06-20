@@ -50,10 +50,10 @@ h1 {
 }
 
 .index {
-    background-color: rgb(rgb(111, 111, 111), green, blue);
+    background-color: rgb(111, 111, 111);
 }
 
-.login, .signup {
+.login, .signup, .Settings{
     background: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)),
     url("Inlog-backdrop.jpg");
     width: 100vw;
@@ -116,22 +116,32 @@ h1 {
     color: white;
 }
 
-.h1-inlog, .h1-signup{
+.h1-inlog, .h1-signup, .h1-settings{
     text-align: center;
 }
 
-.h2-inlog, .h2-signup{
+.h1-settings {
+    transform: translateY(-100px);
+}
+
+.h2-inlog, .h2-signup, .h2-settings{
     font-size: 40px;
     color: white;
     margin: 20px 0px 0px 60px;
     transition: 1.2s;
-    
 }
 
-.h2-inlog:hover, .h2-signup:hover{
+.h2-inlog:hover, .h2-signup:hover, .h2-settings:hover{
     font-size: 40px;
     color: rgb(97, 97, 97);
     transform: translateX(-40px);
+}
+
+h3{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    display: inline-block;
 }
 
 em{
@@ -142,6 +152,7 @@ em{
 a{
     text-decoration: none;
     display: inline-block;
+    color: white;
 }
 
 .red{
@@ -185,13 +196,41 @@ a{
 
 }
 
-.Uitlog-btn{
+.Uitlog-btn, .Setting{
     position: absolute;
     right: 50px;
-    top: 50px;
     color: white;
 }
 
-.Uitlog-btn:hover{
+.Uitlog-btn{
+    top: 50px;
+}
+
+.Setting{
+    top: 75px;
+}
+
+.Uitlog-btn:hover, .Setting:hover{
     text-decoration: underline;
+}
+
+
+
+
+.Kattenfoto{
+    position: absolute;
+    right: 0;
+    top: 50vh;
+    width: 400px;
+    height: 250px;
+}
+
+.info{
+    color: white;
+    width: 50vw;
+}
+
+.projecten{
+    text-decoration: underline;
+    color: rgb(0, 179, 255);
 }

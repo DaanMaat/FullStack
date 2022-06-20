@@ -26,6 +26,7 @@ if(isset($_GET["loguit"])){
 <?php
     echo $_SESSION['melding'];
     echo $_SESSION['completion-msg'];
-    ?>
+    echo $_SESSION['test'];
+?>
 </body>
 </html>
